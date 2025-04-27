@@ -1,2 +1,19 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# Ignore Terraform hidden folders
 .terraform/
+.crash/
+
+# Ignore IDE/editor stuff
+*.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore build artifacts (if you zip functions)
 *.zip
+lambda/alert_handler.zip
